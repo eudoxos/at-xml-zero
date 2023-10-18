@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cx3d MajorVersion="1" MinorVersion="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cx3d.xsd">
+	<CalibCase3d id="factory">
+		<name>C6-4090MCS20-850-1050-660</name>
+		<sensorSN>21815438</sensorSN>
+		<dateTime>21-Aug-2023</dateTime>
+		<creator>cx_3d</creator>
+		<description>Factory Calibration</description>
+		<target>0</target>
+		<sensorSize>4096 3072</sensorSize>
+		<fov>908 750 1058 858 1208 968</fov>
+		<roc>0 0 0 0</roc>
+		<intrinsic>
+			<model>1114625</model>
+			<rangeOffset>0</rangeOffset>
+			<!-- <rangeScale>0.0625</rangeScale> -->
+			<rangeScale>1.</rangeScale>
+			<rrH>1</rrH>
+			<rrV>1</rrV>
+			<sensorRoi>0 0 0 0</sensorRoi>
+			<sensorR>0 0 0</sensorR>
+			<pixelSize>0 0</pixelSize>
+			<f>0</f>
+			<!-- <cp>2057.94 1532.56</cp> -->
+			<cp>0 0</cp>
+			<L>
+				<rows>1</rows>
+				<cols>2</cols>
+				<dt>d</dt>
+				<!-- <data>2.897516839106191e-09 2.423168701723281e-16</data> -->
+				<data>0 0</data>
+			</L>
+			<P>
+				<rows>3</rows>
+				<cols>3</cols>
+				<dt>d</dt>
+				<!-- <data>0.1037845509237544 0.0001776336251134777 3.222837060548132 6.773225870236871e-06 -0.3003526660831641 2.162172408905211 -2.593673946790924e-08 -0.0002540728060609422 1</data> -->
+        <data>1 0 0 0 1 0 0 0 1</data>
+			</P>
+			<C>
+				<rows>15</rows>
+				<cols>2</cols>
+				<dt>d</dt>
+				<!-- <data>-0.01667861736808633 -0.1250743252557197 1.00001568315671 -0.001189596155663531 0.0001428923811139135 1.000133339151688 -7.25277458929674e-07 7.303949615312702e-07 9.3890255047689e-07 4.149215277979704e-06 3.356889833980849e-07 -5.353905729848046e-07 -1.852525847116862e-09 -8.697263304314725e-10 6.053297551532235e-10 -1.215287938389825e-09 -8.539281538636199e-11 1.155981727966855e-08 -4.887250187568937e-09 -1.713018484598906e-09 4.916377403191734e-12 1.199763339832072e-11 8.862735730473082e-13 1.237545566333308e-11 1.926701511069508e-11 3.137087916579609e-11 -6.923735085188602e-12 -1.820384533253273e-11 5.116910826145329e-12 -4.519578964941792e-11</data1> -->
+        <data>0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</data>
+			</C>
+			<N>
+				<rows>1</rows>
+				<cols>10</cols>
+				<dt>d</dt>
+				<!-- <data>0.02987677045166492 -1.242975486093201e-05 2.670691173989326e-06 -3.238618484502354e-09 -5.327174465441509e-11 2.162183735006373e-14 3.216723554832861e-16 -7.58369396099302e-20 -7.112067503756017e-22 1.659230370435919e-25</data> -->
+        <data>0 0 0 0 0 0 0 0 0 0</data>
+			</N>
+		</intrinsic>
+		<extrinsic>
+			<Sy>1</Sy>
+			<Sxy>0</Sxy>
+			<Szy>0</Szy>
+			<T>0 0 0</T>
+			<R>0 0 0</R>
+		</extrinsic>
+		<metric>
+			<offset>0 0 0</offset>
+			<scale>1 1 1</scale>
+			<invalidDataValue>-nan(ind)</invalidDataValue>
+		</metric>
+		<accuracyStat>
+			<rows>4</rows>
+			<cols>3</cols>
+			<dt>d</dt>
+			<data>1.139128924665245e-13 0.04705273323445992 0.2125306543335341 0 0 0 2.703176787749667e-14 0.04735109973949538 0.1571825630982318 0.05654061952539521 0.03548583795061609 0.2171637732383637</data>
+		</accuracyStat>
+		<lensCorrStat>
+			<rows>1</rows>
+			<cols>3</cols>
+			<dt>d</dt>
+			<data>0 0 0</data>
+		</lensCorrStat>
+	</CalibCase3d>
+</cx3d>
