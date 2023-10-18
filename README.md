@@ -16,3 +16,23 @@ Transformed point: 2, 0, 4
 ```
 
 Where is the factor of two coming from?
+
+When changing Principal point (`<cp>`; first translation in the sequence) to non-zero, it can be seen that the factor of two is applied only *afterwards*; e.g. with `<cp>10 20</cp>`
+```
+$ ./trsf c6-mcs-4090-noop.xml 1 3
+Loaded: c6-mcs-4090-noop.xml
+Original point: 0, 0, 0
+Transformed point: -18, 0, -34
+```
+(1-10=-9,3-20=-17)×2=(-18,-34)
+
+With homography set to `0.5,0,0; 0,0.5,0; 0,0,1`, or equivalently `1,0,0; 0,1,0; 0,0,2` (instead of identity matrix), I get the result which looks correct (no more multiplication by 2):
+
+```
+$ ./trsf c6-mcs-4090-noop.xml 23 333
+Loaded: c6-mcs-4090-noop.xml
+Original point: 23, 0, 333
+Transformed point: 23, 0, 333
+```
+
+I suspect AT's SDK has the unexpected factor of 2 somewhere in the homography computation — by accident, or just not documented. (The only other correction which could be scaling the points later is `C`, but the linear terms are very close to 1 in the calibration data, non-linear terms being close to zero.)
