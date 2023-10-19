@@ -47,4 +47,4 @@ $$\begin{bmatrix}u \\\ v\end{bmatrix}=\frac{1}{1+k_1 r^2 +k_2 r^4}\begin{bmatrix
 
 (with $L=\{k_1,k_2\}$). The implementation follows this formula instead:
 
-$$\begin{bmatrix}u \\\ v\end{bmatrix}=(1+\frac{k_1}{2} r^2 +\frac{k_2}{2} r^4)\begin{bmatrix}u_c \\\ v_c\end{bmatrix}$$
+$$\begin{bmatrix}u \\\ v\end{bmatrix}=\left(1+\frac{k_1}{2} r^2 +\frac{k_2}{2} r^4\right)\begin{bmatrix}u_c \\\ v_c\end{bmatrix}$$
