@@ -41,8 +41,10 @@ I suspect AT's SDK has the unexpected factor of 2 somewhere in the homography co
 
 # Docs bug: division lens model
 
-[AT docs](http://docs.automationtechnology.de/software/cxsdk/concepts_3d/?h=#calib_step5_1) spell the division lens model incorrectly as $$\begin{bmatrix}u \\ v\end{bmatrix}=\frac{1}{1+k_1 r^2 +k_2 r^4}\begin{bmatrix}u_c \\ v_c\end{bmatrix}$$
+[AT docs](http://docs.automationtechnology.de/software/cxsdk/concepts_3d/?h=#calib_step5_1) spell the division lens model incorrectly as
+
+$$\begin{bmatrix}u \\ v\end{bmatrix}=\frac{1}{1+k_1 r^2 +k_2 r^4}\begin{bmatrix}u_c \\ v_c\end{bmatrix}$$
 
 (with $L=\{k_1,k_2\}$). The implementation follows this formula instead:
 
-$$\begin{bmatrix}u \\ v\end{bmatrix}=(1+\frac{k_1}{2} r^2 +\frac{k_2}{2} r^4}\begin{bmatrix}u_c \\ v_c\end{bmatrix}$$
+$$\begin{bmatrix}u \\ v\end{bmatrix}=(1+\frac{k_1}{2} r^2 +\frac{k_2}{2} r^4})\begin{bmatrix}u_c \\ v_c\end{bmatrix}$$
